@@ -1,0 +1,72 @@
+.money{
+    padding-bottom: 20px;
+    display: block;
+    background: #f2f2f2;
+    &_title{
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+        
+            color: #FE6613;
+            margin-bottom: 20px;
+    }
+    &_procent{
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+        
+            color: #00CE3A;
+            margin-bottom: 8px;
+    }
+    &_number{
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 39px;
+            /* identical to box height */
+        
+            text-transform: uppercase;
+        
+            color: #4A4A4A;
+            margin-bottom: 20px;
+    }
+    &_kurs{
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #4A4A4A;
+    }
+    &_link{
+        margin-top: 20px;
+        display: inline-block;
+        padding: 15px 44px 15px 44px;
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+        
+            text-transform: uppercase;
+        background-color: $accent-color;
+            color: #FFFFFF;
+            border-radius: 5px;
+    }
+   
+}
+.money_img-desktop{
+    display: none;
+}
+.accent{
+    color: $accent-color
+}

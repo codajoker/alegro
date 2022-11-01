@@ -1,0 +1,42 @@
+.manager{
+        background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &_title{
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+        
+            color: #FE6613;
+            margin-bottom: 28px;
+    }
+
+
+    &_description{
+        font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        
+            color: #4A4A4A;
+    }
+        &_description:not(:last-child) {
+           margin-bottom: 10px;
+        }
+}
+.desktop_img{
+
+    display: none;
+}
+.mobile_img{
+    margin-bottom: 11px;
+    max-width: 450px;
+}

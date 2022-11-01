@@ -1,0 +1,19 @@
+.prefooter {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $accent-color;
+  &_payments {
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+    gap: 5px 20px;
+  }
+  &_company{
+        display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+  }
+}
