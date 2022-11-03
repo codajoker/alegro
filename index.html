@@ -67,19 +67,19 @@ $QUERY=$_SERVER["QUERY_STRING"];
         <nav class="header_nav">
           <ul class="header_list">
             <li class="header_list-item">
-              <a href="#" class="header_list-link"></a>
+              <a href="#" class="header_list-link">O  Allegro</a>
             </li>
             <li class="header_list-item">
-              <a href="#" class="header_list-link"></a>
+              <a href="#" class="header_list-link">Nasze wartości</a>
             </li>
             <li class="header_list-item">
-              <a href="#" class="header_list-link"></a>
+              <a href="#" class="header_list-link">Twoja inwestycja</a>
             </li>
             <li class="header_list-item">
-              <a href="#" class="header_list-link"></a>
+              <a href="#" class="header_list-link">Innowacyjny program</a>
             </li>
             <li class="header_list-item">
-              <a href="#" class="header_list-link"></a>
+              <a href="#" class="header_list-link">PROJECTY</a>
             </li>
           </ul>
           <button
@@ -149,6 +149,7 @@ $QUERY=$_SERVER["QUERY_STRING"];
               </button>
             </div>
           </div>
+   <div class="hero_wrapper-text">
           <h1 class="hero_title">
             Polska platforma handlowa ALLEGRO PL SP Z O O
           </h1>
@@ -159,67 +160,36 @@ $QUERY=$_SERVER["QUERY_STRING"];
           <p class="hero_description">
             Teraz korporacje handlowe są w Twoich rękach!
           </p>
+   </div>
         </div>
       </section>
       <section class="form">
-        <div class="container forma_header">
-          <h2 class="forma_title">
-            Zacznij zarabiać na zasobach platformy handlowej!
-          </h2>
-          <form method="post" action="thanks/index.php" class="form">
-            <label class="form-label"
-              ><input
-                class="form-input"
-                type="text"
-                name="f_name"
-                placeholder="Twoje Imie"
-                required=""
-            /></label>
-            <label class="form-label"
-              ><input
-                class="form-input"
-                type="text"
-                name="l_name"
-                placeholder="Twoje Nazwisko"
-                required=""
-            /></label>
-            <label class="form-label"
-              ><input
-                class="form-input"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                required=""
-            /></label>
-            <label class="form-label"
-              ><input class="form-input" type="tel" required=""
-            /></label>
-            <input
-              type="hidden"
-              name="phone"
-              class="phone2"
-              autocomplete="off"
-              required
-            />
-            <input
-              type="hidden"
-              name="pixel_id"
-              value="<?php echo $FacebookPixel?>"
-            />
-            <input
-              type="hidden"
-              name="page_lang"
-              value="<?php echo $page_lang?>"
-            />
-            <input type="hidden" name="query" value="<?php echo $QUERY?>" />
-            <input type="hidden" name="gp_id" value="<?php echo $gp?>" />
-            <input type="hidden" name="hs_id" value="<?php echo $hs?>" />
-            <input type="hidden" name="ip" id="ip" />
-            <input type="hidden" name="landing" value="ALEGRO-PL" />
-            <input type="hidden" name="description" value="ALEGRO-PL" />
-            <input type="hidden" name="add_inputs" id="desc" value="" />
-            <button class="form-button">Zarejestruj się</button>
-          </form>
+        <div class="container forma_container">
+        <div class="form_wrapper">
+            <h2 class="form_title">
+              Zacznij zarabiać na zasobach platformy handlowej!
+            </h2>
+            <form method="post" action="thanks/index.php" class="form_form">
+              <label class="form-label"><input class="form-input" type="text" name="f_name" placeholder="Twoje Imie"
+                  required="" /></label>
+              <label class="form-label"><input class="form-input" type="text" name="l_name" placeholder="Twoje Nazwisko"
+                  required="" /></label>
+              <label class="form-label"><input class="form-input form-input-phone" type="email" name="email" placeholder="E-mail"
+                  required="" /></label>
+              <label class="form-label"><input class="form-input" type="tel" required="" /></label>
+              <input type="hidden" name="phone" class="phone2" autocomplete="off" required />
+              <input type="hidden" name="pixel_id" value="<?php echo $FacebookPixel?>" />
+              <input type="hidden" name="page_lang" value="<?php echo $page_lang?>" />
+              <input type="hidden" name="query" value="<?php echo $QUERY?>" />
+              <input type="hidden" name="gp_id" value="<?php echo $gp?>" />
+              <input type="hidden" name="hs_id" value="<?php echo $hs?>" />
+              <input type="hidden" name="ip" id="ip" />
+              <input type="hidden" name="landing" value="ALEGRO-PL" />
+              <input type="hidden" name="description" value="ALEGRO-PL" />
+              <input type="hidden" name="add_inputs" id="desc" value="" />
+              <button class="form-button">Zarejestruj się</button>
+            </form>
+        </div>
         </div>
       </section>
       <setion class="manager">
@@ -248,7 +218,7 @@ $QUERY=$_SERVER["QUERY_STRING"];
         </div>
       </setion>
       <setion class="benefits">
-        <div class="container">
+        <div class="container benefits_container">
           <h2 class="benefits_title">Nasze wartości</h2>
           <ul class="benefits_list">
             <li class="benefits_list-item">
@@ -345,17 +315,18 @@ $QUERY=$_SERVER["QUERY_STRING"];
         </div>
       </setion>
       <setion class="about">
+        
         <div class="container">
           <h2 class="about_title">Innowacyjny program rozwojowy Allegro</h2>
           <img src="./images/mobile/image 8.jpg" alt="" />
         </div>
       </setion>
       <setion class="money">
-        <img class="money_img-mobile" src="./images/mobile/comp1.jpg" alt="" />
+        <img class="money_img-desktop" src="./images/mobile/comp2.jpg" alt="" />
         <div class="container money_container">
           <img
-            class="money_img-desktop"
-            src="./images/mobile/comp2.jpg"
+            class="money_img-mobile"
+            src="./images/mobile/comp1.jpg"
             alt=""
           />
 
@@ -374,9 +345,9 @@ $QUERY=$_SERVER["QUERY_STRING"];
         </div>
       </setion>
       <setion class="project">
-        <div class="container">
+        <div class="container project_container">
           <ul class="project_list">
-            <li class="project_list-item">
+            <li class="project_list-item project_list-item-first ">
               <h3 class="project_list-title">Projekt Allegro Start</h3>
               <img
                 src="./images/mobile/image 9.jpg"
@@ -414,67 +385,33 @@ $QUERY=$_SERVER["QUERY_STRING"];
         </div>
       </setion>
 
-      <setion class="form">
+      <setion class="form_2">
         <div class="container">
-          <div class="wrapper_form">
-            <h2 class="forma_title">
-              Zacznij zarabiać na zasobach platformy handlowej!
-            </h2>
-            <form method="post" action="thanks/index.php" class="form">
-              <label class="form-label"
-                ><input
-                  class="form-input"
-                  type="text"
-                  name="f_name"
-                  placeholder="Twoje Imie"
-                  required=""
-              /></label>
-              <label class="form-label"
-                ><input
-                  class="form-input"
-                  type="text"
-                  name="l_name"
-                  placeholder="Twoje Nazwisko"
-                  required=""
-              /></label>
-              <label class="form-label"
-                ><input
-                  class="form-input"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  required=""
-              /></label>
-              <label class="form-label"
-                ><input class="form-input" type="tel" required=""
-              /></label>
-              <input
-                type="hidden"
-                name="phone"
-                class="phone2"
-                autocomplete="off"
-                required
-              />
-              <input
-                type="hidden"
-                name="pixel_id"
-                value="<?php echo $FacebookPixel?>"
-              />
-              <input
-                type="hidden"
-                name="page_lang"
-                value="<?php echo $page_lang?>"
-              />
-              <input type="hidden" name="query" value="<?php echo $QUERY?>" />
-              <input type="hidden" name="gp_id" value="<?php echo $gp?>" />
-              <input type="hidden" name="hs_id" value="<?php echo $hs?>" />
-              <input type="hidden" name="ip" id="ip" />
-              <input type="hidden" name="landing" value="ALEGRO-PL" />
-              <input type="hidden" name="description" value="ALEGRO-PL" />
-              <input type="hidden" name="add_inputs" id="desc" value="" />
-              <button class="form-button">Zarejestruj się</button>
-            </form>
-          </div>
+        <div class="form_wrapper">
+          <h2 class="form_title">
+            Zacznij zarabiać na zasobach platformy handlowej!
+          </h2>
+          <form method="post" action="thanks/index.php" class="form_form">
+            <label class="form-label"><input class="form-input" type="text" name="f_name" placeholder="Twoje Imie"
+                required="" /></label>
+            <label class="form-label"><input class="form-input" type="text" name="l_name" placeholder="Twoje Nazwisko"
+                required="" /></label>
+            <label class="form-label"><input class="form-input" type="email" name="email" placeholder="E-mail"
+                required="" /></label>
+            <label class="form-label"><input class="form-input" type="tel" required="" /></label>
+            <input type="hidden" name="phone" class="phone2" autocomplete="off" required />
+            <input type="hidden" name="pixel_id" value="<?php echo $FacebookPixel?>" />
+            <input type="hidden" name="page_lang" value="<?php echo $page_lang?>" />
+            <input type="hidden" name="query" value="<?php echo $QUERY?>" />
+            <input type="hidden" name="gp_id" value="<?php echo $gp?>" />
+            <input type="hidden" name="hs_id" value="<?php echo $hs?>" />
+            <input type="hidden" name="ip" id="ip" />
+            <input type="hidden" name="landing" value="ALEGRO-PL" />
+            <input type="hidden" name="description" value="ALEGRO-PL" />
+            <input type="hidden" name="add_inputs" id="desc" value="" />
+            <button class="form-button">Zarejestruj się</button>
+          </form>
+        </div>
         </div>
       </setion>
 

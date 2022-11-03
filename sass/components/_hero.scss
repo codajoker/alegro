@@ -1,21 +1,43 @@
 .hero {
   background-color: $accent-color;
   padding-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 75px;
+  }
+    @media screen and (min-width: 1920px) {
+      padding-bottom: 175px;
+    }
   &_container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
+        @media screen and (min-width: 1920px) {
+          padding-top: 150px;
+        }
   }
   &_bg {
     height: 375px;
     display: flex;
-  
-            align-items: center;
+    align-items: center;
     &-img {
       position: absolute;
       top: 0;
       left: 0;
+      @media screen and (min-width: 1200px) {
+        max-width: 450px;
+        left: 64px;
+      }
+             @media screen and (min-width: 1920px) {
+               max-width: 700px;
+               left: 265px;
+             }
     }
   }
-  &_video{
+  &_video {
     position: relative;
     height: 200px;
     width: 333px;
@@ -23,36 +45,73 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    border-radius: 20px;
+    @media screen and (min-width: 1200px) {
+      height: 250px;
+      width: 400px;
+    }
+         @media screen and (min-width: 1920px) {
+           height: 357px;
+           width: 536px;
+         }
   }
-  &_title{
+  &_title {
     position: relative;
     margin-top: -50px;
     margin-bottom: 10px;
     font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 29px;
-        text-transform: uppercase;
-    
-        color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    @media screen and (min-width: 1920px) {
+      font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+      
+    }
   }
-  &_text{
+  &_text {
+    z-index: 1;
     font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 23px;
-        line-height: 29px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 29px;
     margin-bottom: 10px;
-        color: #FFFFFF;}
-        &_description{
-            font-family: 'Source Sans Pro';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 20px;
-            
-                color: #FFFFFF;
+    color: #ffffff;
+    @media screen and (min-width: 1920px) {
+    font-weight: 400;
+      font-size: 26px;
+      line-height: 33px;
+      }
+  }
+  &_description {
+    z-index: 1;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #ffffff;
+    @media screen and (min-width: 1920px) {
+        font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+      }
+  }
+  &_wrapper-text {
+    z-index: 1;
+    @media screen and (min-width: 1200px){
+      margin-left: 60px;
+    }
+        @media screen and (min-width: 1920px) {
+          margin-left: 100px;
+          width: 413px;
         }
+  }
 }

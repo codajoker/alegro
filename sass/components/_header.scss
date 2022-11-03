@@ -1,15 +1,40 @@
-.header{
-    background-color: $accent-color;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    &_container{
-        display: flex;
-        align-items: center;
+.header {
+  background-color: $accent-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &_container {
+    display: flex;
+    align-items: center;
+  }
+  &_list {
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: flex;
     }
-    &_list{
-        display: none;
+    &-item:not(:last-child) {
+      margin-right: 20px;}
+      &-link {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+    
+    
+        color: #FFFFFF;
     }
-    &_nav{
-        margin-left: auto;
+  }
+  &_nav {
+    margin-left: auto;
+    @media screen and (min-width: 1200px) {
+      margin-left: 80px;
     }
+
+  }
+  &_burger {
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
 }

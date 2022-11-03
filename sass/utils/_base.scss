@@ -64,6 +64,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0px 20px 0 20px;
+  z-index: 1;
   @media screen and (min-width: 550px) {
     width: 550px;
     padding: 0px 50px 0px 50px;
@@ -91,4 +92,23 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+button {
+  transition: background-color $main-duration $timing-function;
+}
+
+a {
+  transition: color $main-duration $timing-function;
+}
+
+button:hover {
+  background-color: #EAC91D;
+  color: white
+}
+
+a:hover {
+  color:#EAC91D;
+}
+.hero_video-play:hover{
+  background-color: transparent;
 }

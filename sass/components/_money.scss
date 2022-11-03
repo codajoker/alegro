@@ -1,7 +1,23 @@
 .money{
     padding-bottom: 20px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #f2f2f2;
+    position: relative;
+    @media screen and (min-width: 1920px){
+        height: 700px;
+        
+    }
+   &_container{
+    @media screen and (min-width: 1200px) {
+        text-align: right;
+        display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: end;
+    }
+   }
     &_title{
         font-family: 'Montserrat';
             font-style: normal;
@@ -12,6 +28,14 @@
         
             color: #FE6613;
             margin-bottom: 20px;
+            @media screen and (min-width: 1200px) {
+                    width: 609px;
+                    font-weight: 400;
+                        font-size: 36px;
+                        line-height: 44px;
+                        text-align: right;
+                        text-transform: uppercase;
+                }
     }
     &_procent{
         font-family: 'Montserrat';
@@ -66,7 +90,23 @@
 }
 .money_img-desktop{
     display: none;
+    @media screen and (min-width: 1200px) {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-height: auto;
+            max-width: 1557px;
+            max-height: 700px;
+            
+        }
 }
+.money_img-mobile {
+max-width: 500px;
+@media screen and (min-width: 1200px){
+    display: none;
+}}
 .accent{
     color: $accent-color
+    
 }

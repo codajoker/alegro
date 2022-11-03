@@ -1,5 +1,9 @@
 .switcher{
+    display: block;
         background: #f2f2f2;
+        @media screen and (min-width: 1200px) {
+                padding-top: 100px;
+            }
       &_wrapper-form{
         padding-left: 32px;
         padding-right: 32px;
@@ -8,6 +12,7 @@
         background: #FFFFFF;
                 border-radius: 20px;
                 box-shadow: 0px 0px 12px rgb(192 192 192 / 25%);
+               
       }
       &_form{
         display: flex;
@@ -36,9 +41,15 @@
             text-align: center;
         margin-bottom: 25px;
             color: #2D344E;
+            @media screen and (min-width: 1920px){
+                font-size: 20px;
+                line-height: 25px;
+                
+            }
        }
        &-result{
         margin-top: 20px;
+        margin-bottom: 10px;
        }
        &-link{
         padding: 11px 55px 13px 55px;
@@ -56,6 +67,9 @@
 }
 .irs-with-grid{
     min-width: 271px;
+    @media screen and (min-width: 1200px){
+    min-width: 635px;
+    }
 }
 .flex-centr{
     display: flex;

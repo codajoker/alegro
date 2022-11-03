@@ -2,7 +2,30 @@
     display: block;
     padding-top: 50px;
         background: #FFFFFF;
-    padding-top: 50px;
+    @media screen and (min-width: 1200px){background-color: $accent-color;
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+    &_container{
+        @media screen and (min-width: 1200px) {
+display: flex;
+            }
+
+    }
+    &_form{
+        @media screen and (min-width: 1200px) {
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &_wrapper{
+        @media screen and (min-width: 1200px) {
+        background-color: #FFFFFF;    
+        padding: 15px 30px 30px 15px;
+        border-radius: 8px;
+        
+        }    }
     &_title{
         font-style: normal;
             font-weight: 700;
@@ -56,6 +79,14 @@
         text-transform: uppercase;
         margin-bottom: 45px;
     }
+&-label{
+    @media screen and (min-width:1200px){
+            margin-right: 5px;
+    }
+        @media screen and (min-width:1920px) {
+            margin-right: 10px;
+        }
+}
 
     &-input {
         width: 100%;
@@ -63,9 +94,18 @@
         border: 1px solid #C5C4C4;
         border-radius: 5px;
         margin-bottom: 20px;
+        @media screen and (min-width:1200px){
+            margin-bottom: 0;
+        }
+        &-phone{
+            @media screen and (min-width:1920px) {
+                    width: 267px;
+                }
+        }
     }
 
     &-button {
+        
         margin-top: 20px;
         display: block;
         margin-left: auto;
@@ -80,5 +120,21 @@ color: #FFFFFF;
     line-height: 20px;
     /* identical to box height, or 125% */
 
-    text-align: center;   }
+    text-align: center;
+
+@media screen and (min-width:1200px) {
+        margin-top: 0;
+        padding: 20px 17px 20px 17px;
+    }   }
+}
+.form_2{
+    display: block;
+            padding-bottom: 50px;
+    @media screen and (min-width:1200px){
+        
+        background-color: $accent-color;
+        display: block;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
